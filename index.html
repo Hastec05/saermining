@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<!-- ============================================================
+  SAER MINING BURKINA — Site vitrine (une seule page)
+  ------------------------------------------------------------
+  POUR MODIFIER FACILEMENT LE SITE :
+  • Les textes : chaque section est clairement commentée en français.
+  • Les numéros / e-mail : cherchez "contact@saerminingbf.com",
+    "+226 55 39 90 30" et "22666000103" (WhatsApp).
+  • Les photos : remplacez les fichiers du dossier "images/"
+    en gardant les mêmes noms de fichiers.
+  • Couleurs : modifiez les variables --gold et --anthracite ci-dessous.
+============================================================ -->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAER Mining Burkina | Location d'engins lourds avec opérateurs — Ouagadougou</title>
+    <meta name="description" content="SAER Mining Burkina : location d'engins lourds (pelle PC500, bulldozer D155, camions bennes) avec opérateurs qualifiés pour les sociétés minières et le BTP à Ouagadougou, Burkina Faso.">
+    <!-- Partage sur WhatsApp / réseaux sociaux -->
+    <meta property="og:title" content="SAER Mining Burkina — Engins lourds & services miniers">
+    <meta property="og:description" content="Engins lourds performants avec opérateurs qualifiés. Contact en un clic.">
+    <meta property="og:image" content="images/hero-pc500.jpg">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="images/logo-saer.png">
+
+    <!-- Bootstrap 5 (chargé depuis Internet, ne pèse rien sur l'hébergement) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Police Montserrat pour les titres -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icônes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ==================== NAVIGATION ==================== -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#accueil" aria-label="SAER Mining — Accueil">
+            <span class="logo-badge">
+                <!-- Pour changer le logo : remplacez images/logo-saer.png -->
+                <img src="images/logo-saer.png" alt="Logo SAER Mining Burkina">
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Ouvrir le menu">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#engins">Engins</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item">
+                    <!-- MODIFIER LE NUMÉRO WHATSAPP ICI (format international sans +) -->
+                    <a class="nav-link nav-whatsapp" href="https://wa.me/22666000103" target="_blank" rel="noopener">
+                        <i class="bi bi-whatsapp me-1"></i>Devis rapide
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section id="accueil" class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="logo-hero">
+                    <img src="images/logo-saer.png" alt="SAER Mining Burkina">
+                </div>
+                <div class="hero-badge">
+                    <i class="bi bi-geo-alt-fill"></i> Ouagadougou — Burkina Faso
+                </div>
+                <h1 class="fade-in">
+                    Votre partenaire
+                    <span class="gold-text">minier de confiance</span>
+                </h1>
+                <p class="lead-text fade-in">
+                    Engins lourds performants, mis à disposition avec opérateurs qualifiés,
+                    pour les sociétés minières, leurs sous-traitants et les entreprises du BTP.
+                </p>
+                <div class="fade-in d-flex flex-wrap gap-3">
+                    <!-- NUMÉRO DE TÉLÉPHONE À MODIFIER ICI -->
+                    <a href="tel:+22655399030" class="btn-gold">
+                        <i class="bi bi-telephone-fill"></i> Nous appeler
+                    </a>
+                    <a href="#engins" class="btn-outline-gold">
+                        Découvrir nos engins <i class="bi bi-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== BANDEAU CONFIANCE ==================== -->
+<div class="trust-strip">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-6 col-lg-3">
+                <div class="trust-item">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                    <div><strong>Réactivité</strong><span>Mobilisation rapide</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="trust-item">
+                    <i class="bi bi-person-badge-fill"></i>
+                    <div><strong>Opérateurs qualifiés</strong><span>Avec chaque engin</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="trust-item">
+                    <i class="bi bi-shield-check"></i>
+                    <div><strong>Fiabilité</strong><span>Opérations continues</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="trust-item">
+                    <i class="bi bi-handshake-fill"></i>
+                    <div><strong>Relation directe</strong><span>Qualité de service</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== À PROPOS ==================== -->
+<section id="apropos">
+    <div class="container">
+        <div class="row align-items-center mb-5 g-5">
+            <div class="col-lg-6 fade-in">
+                <img src="images/pc500-arriere.jpg" alt="Pelle hydraulique Komatsu PC500 de SAER Mining" class="about-img">
+            </div>
+            <div class="col-lg-6 fade-in">
+                <span class="section-title d-block text-start mb-2">
+                    <span class="surtitle">Qui sommes-nous</span>
+                </span>
+                <h2 class="fw-bold mb-4">À propos de SAER Mining</h2>
+                <p class="text-secondary fs-6 mb-4">
+                    SAER Mining Burkina est une société de services à dominante minière, basée à
+                    Ouagadougou. Nous achetons des engins lourds et les mettons à disposition,
+                    avec des opérateurs qualifiés, des sociétés minières, de leurs sous-traitants
+                    et des entreprises du BTP.
+                </p>
+                <ul class="about-list list-unstyled">
+                    <li><i class="bi bi-check-circle-fill"></i> Réactivité dans la mobilisation des équipements</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Opérateurs qualifiés avec chaque engin</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Continuité et fiabilité des opérations</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Maîtrise des coûts d'exploitation</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Relation directe avec le client et qualité de service</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 fade-in">
+                <div class="advantage-card">
+                    <div class="advantage-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+                    <h5>Réactivité</h5>
+                    <p>Mobilisation rapide des équipements selon vos besoins</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-in">
+                <div class="advantage-card">
+                    <div class="advantage-icon"><i class="bi bi-people-fill"></i></div>
+                    <h5>Opérateurs qualifiés</h5>
+                    <p>Personnel compétent fourni avec chaque engin</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-in">
+                <div class="advantage-card">
+                    <div class="advantage-icon"><i class="bi bi-shield-check"></i></div>
+                    <h5>Fiabilité</h5>
+                    <p>Continuité et constance dans nos opérations</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-in">
+                <div class="advantage-card">
+                    <div class="advantage-icon"><i class="bi bi-graph-down-arrow"></i></div>
+                    <h5>Maîtrise des coûts</h5>
+                    <p>Optimisation des coûts d'exploitation</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-in">
+                <div class="advantage-card">
+                    <div class="advantage-icon"><i class="bi bi-handshake"></i></div>
+                    <h5>Relation directe</h5>
+                    <p>Contact direct avec le client et qualité de service</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-in">
+                <div class="advantage-card">
+                    <div class="advantage-icon"><i class="bi bi-award-fill"></i></div>
+                    <h5>Excellence</h5>
+                    <p>Engagement constant pour votre satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SERVICES ==================== -->
+<section id="services" class="services-section">
+    <div class="container">
+        <div class="section-title fade-in">
+            <span class="surtitle">Ce que nous faisons</span>
+            <h2>Nos services</h2>
+            <p>Des solutions complètes pour vos projets miniers et industriels</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 fade-in">
+                <div class="service-card">
+                    <div class="service-icon"><i class="bi bi-truck-flatbed"></i></div>
+                    <h4>Mise à disposition d'équipements</h4>
+                    <p>Engins lourds avec opérateurs qualifiés, prêts à intervenir sur vos chantiers.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-in">
+                <div class="service-card">
+                    <div class="service-icon"><i class="bi bi-gear-wide-connected"></i></div>
+                    <h4>Sous-traitance minière</h4>
+                    <p>Services complets de sous-traitance pour les sociétés minières et leurs partenaires.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 fade-in">
+                <div class="service-card">
+                    <div class="service-icon"><i class="bi bi-tools"></i></div>
+                    <h4>Services techniques &amp; logistiques</h4>
+                    <p>Support technique, logistique et appui aux opérations industrielles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FLOTTE ==================== -->
+<section id="engins">
+    <div class="container">
+        <div class="section-title fade-in">
+            <span class="surtitle">Nos machines</span>
+            <h2>Notre flotte</h2>
+            <p>Engins disponibles immédiatement, fournis avec opérateurs qualifiés</p>
+        </div>
+        <div class="row g-4">
+
+            <!-- Engin 1 : photo = images/pc500-profil.jpg -->
+            <div class="col-md-6 col-lg-4 fade-in">
+                <div class="equipment-card">
+                    <div class="equipment-image-container">
+                        <img src="images/pc500-profil.jpg" alt="Pelle hydraulique Komatsu PC500 — vue de profil" class="equipment-image">
+                        <span class="equipment-badge badge-available">En flotte</span>
+                    </div>
+                    <div class="equipment-body">
+                        <h4>Pelle hydraulique</h4>
+                        <div class="model">Komatsu PC500</div>
+                        <p>Pelle hydraulique haute performance pour le terrassement et l'extraction minière.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engin 2 : photo = images/d155-profil.jpg -->
+            <div class="col-md-6 col-lg-4 fade-in">
+                <div class="equipment-card">
+                    <div class="equipment-image-container">
+                        <img src="images/d155-profil.jpg" alt="Bulldozer Komatsu D155 — vue de profil" class="equipment-image">
+                        <span class="equipment-badge badge-available">En flotte</span>
+                    </div>
+                    <div class="equipment-body">
+                        <h4>Bulldozer</h4>
+                        <div class="model">Komatsu D155</div>
+                        <p>Bulldozer puissant pour le nivellement, le décapage et le terrassement lourd.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engin 3 : photo = images/camions-bennes.jpg -->
+            <div class="col-md-6 col-lg-4 fade-in">
+                <div class="equipment-card">
+                    <div class="equipment-image-container">
+                        <img src="images/camions-bennes.jpg" alt="Camion benne en action sur un chantier" class="equipment-image">
+                        <span class="equipment-badge badge-available">En flotte</span>
+                    </div>
+                    <div class="equipment-body">
+                        <h4>Camions bennes</h4>
+                        <div class="model">Flotte disponible</div>
+                        <p>Transport de matériaux et de déblais sur vos chantiers, en toute fiabilité.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ÉQUIPEMENTS SUR DEMANDE ==================== -->
+<section class="on-demand-section">
+    <div class="container">
+        <div class="section-title fade-in">
+            <span class="surtitle" style="color: var(--gold);">À la demande</span>
+            <h2>Autres équipements</h2>
+            <p>Acquisition selon les opportunités et vos besoins spécifiques — parlez-nous de votre projet</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3 fade-in">
+                <div class="on-demand-item">
+                    <i class="bi bi-truck-front-fill"></i>
+                    <h5>Tombereaux articulés</h5>
+                    <p>ADT — Dumpers</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 fade-in">
+                <div class="on-demand-item">
+                    <i class="bi bi-truck-flatbed"></i>
+                    <h5>Chargeuses</h5>
+                    <p>Wheel loaders</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 fade-in">
+                <div class="on-demand-item">
+                    <i class="bi bi-rulers"></i>
+                    <h5>Niveleuses</h5>
+                    <p>Motor graders</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 fade-in">
+                <div class="on-demand-item">
+                    <i class="bi bi-gear-fill"></i>
+                    <h5>Autres équipements</h5>
+                    <p>Sur demande</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== GALERIE (diaporama automatique) ==================== -->
+<section id="galerie" class="gallery-section">
+    <div class="container">
+        <div class="section-title fade-in">
+            <span class="surtitle">En images</span>
+            <h2>Galerie photos</h2>
+            <p>Nos engins en flotte — le diaporama défile automatiquement</p>
+        </div>
+        <div class="row fade-in">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <!-- Grande image + flèches + points (le diaporama est piloté en bas de page, section 5 du script) -->
+                <div class="gallery-wrapper" id="galleryWrapper">
+                    <img id="mainGallery" src="images/pc500-profil.jpg"
+                         alt="Pelle Komatsu PC500 vue de profil" class="gallery-main">
+
+                    <button class="gallery-arrow prev" id="galleryPrev" aria-label="Photo précédente">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button class="gallery-arrow next" id="galleryNext" aria-label="Photo suivante">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+
+                    <!-- Points de navigation (créés automatiquement par le script) -->
+                    <div id="galleryDots" class="gallery-dots"></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row g-3">
+                    <div class="col-4 col-lg-6">
+                        <img src="images/thumb-pc500-profil.jpg" alt="Pelle Komatsu PC500 vue de profil" class="gallery-thumb active"
+                             data-full="images/pc500-profil.jpg">
+                    </div>
+                    <div class="col-4 col-lg-6">
+                        <img src="images/thumb-pc500-arriere.jpg" alt="Pelle Komatsu PC500 vue arrière" class="gallery-thumb"
+                             data-full="images/pc500-arriere.jpg">
+                    </div>
+                    <div class="col-4 col-lg-6">
+                        <img src="images/thumb-d155-profil1.jpg" alt="Bulldozer Komatsu D155 vue de profil" class="gallery-thumb"
+                             data-full="images/d155-profil.jpg">
+                    </div>
+                    <div class="col-4 col-lg-6">
+                        <img src="images/thumb-d155-face.jpg" alt="Bulldozer Komatsu D155 vue de face" class="gallery-thumb"
+                             data-full="images/d155-face.jpg">
+                    </div>
+                    <div class="col-4 col-lg-6">
+                        <img src="images/thumb-d155-profil2.jpg" alt="Bulldozer Komatsu D155 autre vue de profil" class="gallery-thumb"
+                             data-full="images/d155-profil2.jpg">
+                    </div>
+                    <div class="col-4 col-lg-6">
+                        <img src="images/thumb-camions-bennes.jpg" alt="Camion benne en action sur chantier" class="gallery-thumb"
+                             data-full="images/camions-bennes.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section id="contact" class="services-section">
+    <div class="container">
+        <div class="section-title fade-in">
+            <span class="surtitle">Parlons de votre projet</span>
+            <h2>Contactez-nous</h2>
+            <p>Un projet ? Une question ? Nous sommes à votre écoute — en un clic.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 fade-in">
+                <!-- TÉLÉPHONE -->
+                <a href="tel:+22655399030" class="contact-card">
+                    <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+                    <h4>Téléphone</h4>
+                    <p class="value">+226 55 39 90 30</p>
+                    <p class="hint">Appelez-nous directement</p>
+                </a>
+            </div>
+            <div class="col-md-4 fade-in">
+                <!-- WHATSAPP -->
+                <a href="https://wa.me/22666000103" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon whatsapp"><i class="bi bi-whatsapp"></i></div>
+                    <h4>WhatsApp</h4>
+                    <p class="value">+226 66 00 01 03</p>
+                    <p class="hint">Réponse rapide, 7j/7</p>
+                </a>
+            </div>
+            <div class="col-md-4 fade-in">
+                <!-- E-MAIL -->
+                <a href="mailto:contact@saerminingbf.com" class="contact-card">
+                    <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                    <h4>E-mail</h4>
+                    <p class="value">contact@saerminingbf.com</p>
+                    <p class="hint">Écrivez-nous à tout moment</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+    <div class="container">
+        <div class="row align-items-center mb-4 g-4">
+            <div class="col-md-6">
+                <a class="logo-footer d-inline-block" href="#accueil" aria-label="SAER Mining — retour en haut">
+                    <span class="logo-badge"><img src="images/logo-saer.png" alt="Logo SAER Mining Burkina"></span>
+                </a>
+                <p class="mt-3 mb-1">Services miniers et location d'engins lourds avec opérateurs</p>
+                <p class="mb-0"><i class="bi bi-geo-alt-fill me-1" style="color: var(--gold);"></i> Ouagadougou, Burkina Faso</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p class="mb-1">
+                    <a href="tel:+22655399030"><i class="bi bi-telephone-fill me-2" style="color: var(--gold);"></i>+226 55 39 90 30</a>
+                </p>
+                <p class="mb-1">
+                    <a href="https://wa.me/22666000103" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-2" style="color: var(--gold);"></i>+226 66 00 01 03</a>
+                </p>
+                <p class="mb-0">
+                    <a href="mailto:contact@saerminingbf.com"><i class="bi bi-envelope-fill me-2" style="color: var(--gold);"></i>contact@saerminingbf.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="copyright">
+            <p>&copy; <span id="year">2026</span> SAER Mining Burkina — Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bouton flottant WhatsApp (toujours visible) -->
+<a href="https://wa.me/22666000103" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Nous contacter sur WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    /* ===== 1. Effet sur la barre de navigation au défilement ===== */
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+
+    /* ===== 2. Apparition en fondu des sections au défilement ===== */
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    /* ===== 3. Défilement doux + fermeture du menu mobile ===== */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (!target) return;
+            e.preventDefault();
+            const top = target.getBoundingClientRect().top + window.pageYOffset - 75;
+            window.scrollTo({ top, behavior: 'smooth' });
+            const collapse = document.querySelector('.navbar-collapse.show');
+            if (collapse) bootstrap.Collapse.getInstance(collapse).hide();
+        });
+    });
+
+    /* ===== 4. Lien de menu actif selon la section visible ===== */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    window.addEventListener('scroll', () => {
+        let current = 'accueil';
+        sections.forEach(section => {
+            if (window.pageYOffset >= section.offsetTop - 220) {
+                current = section.getAttribute('id');
+            }
+        });
+        navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+        });
+    }, { passive: true });
+
+    /* ===== 5. GALERIE : diaporama automatique =====
+       - Défile toutes les 4 secondes
+       - Flèches + miniatures + points pour naviguer
+       - Pause au survol (ordinateur) et balayage tactile (téléphone)      */
+    const galleryThumbs = Array.from(document.querySelectorAll('.gallery-thumb'));
+    const mainGallery   = document.getElementById('mainGallery');
+    const galleryDots   = document.getElementById('galleryDots');
+    const galleryWrap   = document.getElementById('galleryWrapper');
+    const SLIDE_INTERVAL = 4000; // 4 secondes par photo
+    let slideIndex = 0;
+    let slideTimer = null;
+
+    // Pré-chargement des grandes images (diaporama fluide)
+    galleryThumbs.forEach(t => { const im = new Image(); im.src = t.dataset.full; });
+
+    // Création des points de navigation
+    galleryThumbs.forEach((thumb, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'gallery-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Voir la photo ' + (i + 1));
+        dot.addEventListener('click', () => { goToSlide(i); restartAutoSlide(); });
+        galleryDots.appendChild(dot);
+    });
+    const dots = Array.from(galleryDots.children);
+
+    // Affiche la photo n° i (avec fondu)
+    function goToSlide(i) {
+        slideIndex = (i + galleryThumbs.length) % galleryThumbs.length;
+        const thumb = galleryThumbs[slideIndex];
+        mainGallery.style.opacity = '0';
+        const loader = new Image();
+        loader.onload = () => {
+            mainGallery.src = loader.src;
+            mainGallery.alt = thumb.alt;
+            mainGallery.style.opacity = '1';
+        };
+        loader.src = thumb.dataset.full;
+        // Synchronise miniature + point actif
+        galleryThumbs.forEach((t, k) => t.classList.toggle('active', k === slideIndex));
+        dots.forEach((d, k) => d.classList.toggle('active', k === slideIndex));
+    }
+
+    function nextSlide() { goToSlide(slideIndex + 1); }
+    function prevSlide() { goToSlide(slideIndex - 1); }
+
+    // Défilement automatique
+    function startAutoSlide() {
+        stopAutoSlide();
+        slideTimer = setInterval(nextSlide, SLIDE_INTERVAL);
+    }
+    function stopAutoSlide() { if (slideTimer) clearInterval(slideTimer); }
+    function restartAutoSlide() { startAutoSlide(); }
+
+    // Flèches
+    document.getElementById('galleryNext').addEventListener('click', () => { nextSlide(); restartAutoSlide(); });
+    document.getElementById('galleryPrev').addEventListener('click', () => { prevSlide(); restartAutoSlide(); });
+
+    // Miniatures
+    galleryThumbs.forEach((thumb, i) => {
+        thumb.addEventListener('click', () => { goToSlide(i); restartAutoSlide(); });
+    });
+
+    // Pause au survol (ordinateur)
+    galleryWrap.addEventListener('mouseenter', stopAutoSlide);
+    galleryWrap.addEventListener('mouseleave', startAutoSlide);
+
+    // Balayage tactile (téléphone : glisser gauche/droite)
+    let touchStartX = 0;
+    mainGallery.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    mainGallery.addEventListener('touchend', e => {
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(dx) > 40) {
+            dx < 0 ? nextSlide() : prevSlide();
+            restartAutoSlide();
+        }
+    }, { passive: true });
+
+    // Démarrage du diaporama
+    startAutoSlide();
+
+    /* ===== 6. Année automatique dans le pied de page ===== */
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* ===== 7. Sécurité : si une image est manquante, afficher une icône ===== */
+    document.querySelectorAll('.equipment-image, .gallery-main, .gallery-thumb, .about-img').forEach(img => {
+        img.addEventListener('error', () => {
+            img.style.display = 'none';
+            const container = img.closest('.equipment-image-container') || img.parentElement;
+            if (container && !container.querySelector('.img-fallback')) {
+                container.style.cssText += ';display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1F2937,#374151);';
+                const icon = document.createElement('i');
+                icon.className = 'bi bi-truck-front-fill img-fallback';
+                icon.style.cssText = 'font-size:3.5rem;color:#D4A84B;';
+                container.appendChild(icon);
+            }
+        });
+    });
+</script>
+</body>
+</html>
