@@ -1,4 +1,4 @@
-  /* ========== COULEURS DE LA CHARTE (à modifier ici si besoin) ========== */
+/* ========== COULEURS DE LA CHARTE (à modifier ici si besoin) ========== */
     :root {
         --anthracite: #1F2937;
         --anthracite-light: #374151;
@@ -25,7 +25,7 @@
 
     ::selection { background: var(--gold); color: var(--anthracite); }
 
-    /* ===================== LOGO ===================== */
+    /* ===================== LOGO (seul logo du site : le menu) ===================== */
     .logo-badge {
         background: var(--white);
         border-radius: 10px;
@@ -35,8 +35,6 @@
         box-shadow: 0 2px 10px rgba(0,0,0,0.25);
     }
     .logo-badge img { height: 40px; width: auto; display: block; }
-    .logo-footer .logo-badge { background: var(--white); }
-    .logo-footer img { height: 52px; }
 
     /* ===================== NAVBAR ===================== */
     .navbar {
@@ -67,7 +65,7 @@
     .nav-link:hover, .nav-link.active { color: var(--gold) !important; }
     .nav-link:hover::after, .nav-link.active::after { width: 100%; }
 
-    /* Petit bouton WhatsApp dans le menu (visible sur ordinateur) */
+    /* Bouton WhatsApp dans le menu */
     .nav-whatsapp {
         background: #25D366;
         color: var(--anthracite) !important;
@@ -75,38 +73,24 @@
         padding: 0.35rem 1rem !important;
         font-weight: 600;
         margin-left: 0.75rem;
+        font-size: 0.85rem;
     }
     .nav-whatsapp::after { display: none; }
-    .nav-whatsapp:hover { background: #1ebe59; color: var(--anthracite) !important; transform: translateY(-1px); }
+    .nav-whatsapp:hover { background: #1ebe59; color: var(--anthracite) !important; }
 
     /* ===================== HERO (photo de fond réelle) ===================== */
     .hero {
         min-height: 100vh;
         background:
-            linear-gradient(100deg, rgba(31,41,55,0.96) 0%, rgba(31,41,55,0.75) 45%, rgba(31,41,55,0.35) 100%),
-            url('images/hero-pc500.jpg') center / cover no-repeat;
+            linear-gradient(100deg, rgba(31,41,55,0.96) 0%, rgba(31,41,55,0.78) 45%, rgba(31,41,55,0.35) 100%),
+            url('images/hero-pc500.webp') center / cover no-repeat;
         display: flex;
         align-items: center;
         position: relative;
         padding-top: 90px;
     }
-    .hero-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        background: rgba(212,168,75,0.15);
-        border: 1px solid var(--gold);
-        color: var(--gold-light);
-        border-radius: 50px;
-        padding: 0.35rem 1.1rem;
-        font-size: 0.85rem;
-        font-weight: 600;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin-bottom: 1.5rem;
-    }
     .hero h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
         font-weight: 800;
         color: var(--white);
         line-height: 1.15;
@@ -119,16 +103,6 @@
         max-width: 620px;
         margin-bottom: 2.25rem;
     }
-    .hero .logo-hero {
-        background: var(--white);
-        border-radius: 14px;
-        padding: 10px 16px;
-        display: inline-block;
-        margin-bottom: 1.75rem;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.35);
-        animation: fadeInDown 0.9s ease;
-    }
-    .hero .logo-hero img { height: 56px; display: block; }
 
     /* ===================== BOUTONS ===================== */
     .btn-gold {
@@ -200,45 +174,29 @@
 
     section { padding: 5.5rem 0; }
 
-    /* ===================== BANDEAU CONFIANCE ===================== */
+    /* ===================== QUATRE MOTS-CLÉS ===================== */
     .trust-strip {
         background: var(--anthracite);
         padding: 2.25rem 0;
-        position: relative;
     }
     .trust-item {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 0.9rem;
         color: var(--white);
     }
     .trust-item i {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         color: var(--gold);
         flex-shrink: 0;
     }
-    .trust-item strong { display: block; font-family: 'Montserrat', sans-serif; font-size: 1rem; }
-    .trust-item span { color: rgba(255,255,255,0.65); font-size: 0.88rem; }
+    .trust-item strong {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.98rem;
+        line-height: 1.3;
+    }
 
     /* ===================== À PROPOS ===================== */
-    .about-img {
-        width: 100%;
-        border-radius: 18px;
-        box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-        object-fit: cover;
-        height: 100%;
-        min-height: 380px;
-    }
-    .about-list li {
-        display: flex;
-        gap: 0.75rem;
-        align-items: flex-start;
-        margin-bottom: 0.9rem;
-        color: var(--gray);
-        font-size: 1.02rem;
-    }
-    .about-list i { color: var(--gold-dark); font-size: 1.2rem; margin-top: 2px; }
-
     .advantage-card {
         background: var(--gray-light);
         padding: 1.9rem 1.4rem;
@@ -266,43 +224,8 @@
     .advantage-card h5 { font-weight: 600; font-size: 1.02rem; margin-bottom: 0.4rem; }
     .advantage-card p { color: var(--gray); font-size: 0.92rem; margin: 0; }
 
-    /* ===================== SERVICES ===================== */
+    /* ===================== ENGINS ===================== */
     .services-section { background: var(--gray-light); }
-    .service-card {
-        background: var(--white);
-        padding: 2.6rem 2rem;
-        border-radius: 16px;
-        text-align: center;
-        transition: all 0.3s ease;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-        border: 1px solid #ECECEC;
-    }
-    .service-card::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: 0;
-        height: 4px;
-        background: var(--gold);
-        transform: scaleX(0);
-        transition: transform 0.3s ease;
-    }
-    .service-card:hover::before { transform: scaleX(1); }
-    .service-card:hover { transform: translateY(-10px); box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
-    .service-icon {
-        width: 78px; height: 78px;
-        background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
-        border-radius: 20px;
-        display: flex; align-items: center; justify-content: center;
-        margin: 0 auto 1.5rem;
-        font-size: 2rem;
-        color: var(--white);
-    }
-    .service-card h4 { font-weight: 600; margin-bottom: 0.9rem; }
-    .service-card p { color: var(--gray); margin: 0; font-size: 0.98rem; }
-
-    /* ===================== FLOTTE ===================== */
     .equipment-card {
         background: var(--white);
         border-radius: 16px;
@@ -326,43 +249,11 @@
         transition: transform 0.5s ease;
     }
     .equipment-card:hover .equipment-image { transform: scale(1.05); }
-    .equipment-badge {
-        position: absolute;
-        top: 14px; left: 14px;
-        padding: 0.35rem 0.95rem;
-        border-radius: 50px;
-        font-size: 0.78rem;
-        font-weight: 700;
-        background: var(--white);
-        box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-    }
-    .badge-available { color: #15803D; }
-    .badge-available::before {
-        content: '';
-        display: inline-block;
-        width: 8px; height: 8px;
-        border-radius: 50%;
-        background: #22C55E;
-        margin-right: 6px;
-        animation: pulse 1.6s infinite;
-    }
-    @keyframes pulse {
-        0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.5); }
-        50% { box-shadow: 0 0 0 6px rgba(34,197,94,0); }
-    }
     .equipment-body { padding: 1.75rem; }
-    .equipment-body h4 { font-weight: 700; margin-bottom: 0.25rem; }
-    .equipment-body .model {
-        color: var(--gold-dark);
-        font-weight: 700;
-        font-size: 0.85rem;
-        margin-bottom: 0.85rem;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-    }
-    .equipment-body p { color: var(--gray); font-size: 0.95rem; margin: 0; }
+    .equipment-body h4 { font-weight: 700; margin-bottom: 0.5rem; }
+    .equipment-body p { color: var(--gray); font-size: 0.98rem; margin: 0; }
 
-    /* ===================== SUR DEMANDE (fond sombre) ===================== */
+    /* ===================== SUR DEMANDE (fond sombre, sans photo) ===================== */
     .on-demand-section {
         background:
             radial-gradient(circle at 15% 20%, rgba(212,168,75,0.12) 0%, transparent 45%),
@@ -385,33 +276,8 @@
         transform: translateY(-6px);
     }
     .on-demand-item i { font-size: 2.6rem; color: var(--gold); margin-bottom: 1rem; }
-    .on-demand-item h5 { font-weight: 600; color: var(--white); margin-bottom: 0.35rem; }
+    .on-demand-item h5 { font-weight: 600; color: var(--white); margin-bottom: 0.35rem; font-size: 1rem; }
     .on-demand-item p { color: rgba(255,255,255,0.65); font-size: 0.9rem; margin: 0; }
-
-    /* ===================== GALERIE ===================== */
-    .gallery-section { background: var(--gray-light); }
-    .gallery-main {
-        width: 100%;
-        height: 480px;
-        object-fit: cover;
-        border-radius: 16px;
-        box-shadow: 0 12px 35px rgba(0,0,0,0.12);
-    }
-    .gallery-thumb {
-        width: 100%;
-        height: 110px;
-        object-fit: cover;
-        border-radius: 12px;
-        cursor: pointer;
-        border: 3px solid transparent;
-        transition: all 0.3s ease;
-        opacity: 0.65;
-    }
-    .gallery-thumb:hover, .gallery-thumb.active {
-        border-color: var(--gold);
-        opacity: 1;
-        transform: translateY(-3px);
-    }
 
     /* ===================== CONTACT ===================== */
     .contact-card {
@@ -444,26 +310,16 @@
     .contact-icon.whatsapp { background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); }
     .contact-card h4 { font-weight: 600; margin-bottom: 0.4rem; }
     .contact-card .value { color: var(--gold-dark); font-weight: 700; font-size: 1.08rem; margin: 0; }
-    .contact-card .hint { color: var(--gray); font-size: 0.85rem; margin: 0.3rem 0 0; }
-
-    /* ===================== BOUTON FLOTTANT WHATSAPP ===================== */
-    .whatsapp-float {
-        position: fixed;
-        bottom: 22px; right: 22px;
-        width: 58px; height: 58px;
-        background: #25D366;
-        color: var(--white);
-        border-radius: 50%;
-        display: flex; align-items: center; justify-content: center;
-        font-size: 1.9rem;
-        box-shadow: 0 8px 25px rgba(37,211,102,0.45);
-        z-index: 1050;
-        transition: all 0.3s ease;
-        text-decoration: none;
+    .contact-card .action-label {
+        color: var(--gray);
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin: 0.6rem 0 0;
+        transition: color 0.3s ease;
     }
-    .whatsapp-float:hover { color: var(--white); transform: scale(1.1); }
+    .contact-card:hover .action-label { color: var(--gold-dark); }
 
-    /* ===================== FOOTER ===================== */
+    /* ===================== PIED DE PAGE ===================== */
     footer {
         background: var(--anthracite);
         color: var(--white);
@@ -483,11 +339,6 @@
     }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
 
-    @keyframes fadeInDown {
-        from { opacity: 0; transform: translateY(-25px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
     @media (prefers-reduced-motion: reduce) {
         .fade-in { opacity: 1; transform: none; transition: none; }
         html { scroll-behavior: auto; }
@@ -504,76 +355,9 @@
         .nav-whatsapp { margin: 0.6rem 0 0.4rem; display: inline-block; }
     }
     @media (max-width: 768px) {
-        .hero h1 { font-size: 2.15rem; }
+        .hero h1 { font-size: 2rem; }
         .hero p.lead-text { font-size: 1rem; }
-        .section-title h2 { font-size: 1.75rem; }
-        .gallery-main { height: 300px; }
-        .gallery-thumb { height: 82px; }
+        .section-title h2 { font-size: 1.7rem; }
         .logo-badge img { height: 34px; }
-        .hero .logo-hero img { height: 46px; }
         section { padding: 4rem 0; }
-        .about-img { min-height: 280px; margin-bottom: 2rem; }
-    }
-
-    /* ===================== DIAPORAMA GALERIE ===================== */
-    .gallery-wrapper { position: relative; }
-
-    .gallery-wrapper::after {
-        content: '';
-        position: absolute;
-        left: 0; right: 0; bottom: 0;
-        height: 90px;
-        background: linear-gradient(to top, rgba(31,41,55,0.55), transparent);
-        border-radius: 0 0 16px 16px;
-        pointer-events: none;
-    }
-
-    #mainGallery { transition: opacity 0.35s ease; }
-
-    .gallery-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 46px; height: 46px;
-        border-radius: 50%;
-        border: none;
-        background: rgba(255,255,255,0.92);
-        color: var(--anthracite);
-        font-size: 1.15rem;
-        display: flex; align-items: center; justify-content: center;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        transition: all 0.3s ease;
-        z-index: 2;
-    }
-    .gallery-arrow:hover { background: var(--gold); color: var(--white); }
-    .gallery-arrow.prev { left: 14px; }
-    .gallery-arrow.next { right: 14px; }
-
-    .gallery-dots {
-        position: absolute;
-        bottom: 14px; left: 50%;
-        transform: translateX(-50%);
-        display: flex; gap: 8px;
-        z-index: 2;
-    }
-    .gallery-dot {
-        width: 11px; height: 11px;
-        border-radius: 50%;
-        border: 2px solid rgba(255,255,255,0.85);
-        background: transparent;
-        padding: 0;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-    .gallery-dot:hover { border-color: var(--gold); }
-    .gallery-dot.active {
-        background: var(--gold);
-        border-color: var(--gold);
-        transform: scale(1.3);
-    }
-
-    @media (max-width: 768px) {
-        .gallery-arrow { width: 38px; height: 38px; font-size: 1rem; }
-        .gallery-arrow.prev { left: 8px; }
-        .gallery-arrow.next { right: 8px; }
     }
