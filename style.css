@@ -355,10 +355,6 @@
     @media (max-width: 991px) {
         .nav-whatsapp { margin: 0.6rem 0 0.4rem; display: inline-block; }
     }
-.surtitle {
-    font-size: 24px; /* Augmentez ou diminuez cette valeur selon vos besoins */
-    font-weight: bold; /* Optionnel : pour mettre le texte en gras */
-}
     @media (max-width: 768px) {
         .hero h1 { font-size: 2rem; }
         .hero p.lead-text { font-size: 1rem; }
