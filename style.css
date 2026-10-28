@@ -275,7 +275,7 @@
         border-color: var(--gold);
         transform: translateY(-6px);
     }
-    .on-demand-item .od-icon { width: 74px; height: auto; margin-bottom: 1rem; }
+    .on-demand-item .od-icon { height: 60px; width: auto; max-width: 110px; margin-bottom: 1rem; }
     .on-demand-item h5 { font-weight: 600; color: var(--white); margin-bottom: 0.35rem; font-size: 1rem; }
     .on-demand-item p { color: rgba(255,255,255,0.65); font-size: 0.9rem; margin: 0; }
 
